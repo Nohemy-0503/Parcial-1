@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web</title>
+  <link rel="stylesheet" href="parcial1.css">
+</head>
+<body>
+  <header>
+    <h1>Anime y Pokémon</h1>
+    <p>¡Series y peliculas que te pueden entretener!</p>
+  </header>
+  
+  <main>
+    <section id="contenido">
+      <h2>Anime y Pokémon</h2>
+      <p>Pikachu esta en la primera imagen, Vulpix en la segunda, los 2 son Pokémon y en la tercera imagen esta Shoto Todoroki que es anime.</p>
+      <button id="boton" onclick="mostrarDescripcion()">Haz clic</button>
+      <p id="descripcion">Esta es la descripción que se mostrará al hacer clic en el botón.</p>
+    </section>
+  </main>
+
+  <main id="contenido">
+    <!-- Cuadro 1 -->
+    <div class="cuadro-relleno" onclick="mostrarDetalles('Cuadro 1', 'Pikachu', 'imagen1.jpg')">
+      <img src="Pikachu.jpg" alt="Imagen Cuadro 1">
+      <p>Cuadro 1</p>
+    </div>
+
+    <!-- Cuadro 2 -->
+    <div class="cuadro-relleno" onclick="mostrarDetalles('Cuadro 2', 'Vulpix', 'imagen2.jpg')">
+      <img src="descarga.jpg" alt="Imagen Cuadro 2">
+      <p>Cuadro 2</p>
+    </div>
+
+    <!-- Cuadro 3 -->
+    <div class="cuadro-relleno" onclick="mostrarDetalles('Cuadro 3', 'Shoto Todoroki', 'imagen3.jpg')">
+      <img src="descarga (1).jpg" alt="Imagen Cuadro 3">
+      <p>Cuadro 3</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Hecho por: Marcela Nohemy Hernández Villatoro, Katherine Verenice Fuentes Rivera</p>
+  </footer>
+
+  <script src="parcial1.js"></script>
+</body>
+</html>
